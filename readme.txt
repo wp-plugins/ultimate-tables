@@ -42,11 +42,10 @@ Its main features are:
 </ul>
 
 
+Once installed and activated the plugin within wordpress administration go to 'Settings-> Ultimate tables'. 
 
-` Once installed and activated the plugin within wordpress administration go to 'Settings-> Ultimate tables'. 
 
-
-Inside you will create, manage tables or copy the code to insert into your page or post.`
+Inside you will create, manage tables or copy the code to insert into your page or post.
 
 
 == Installation ==

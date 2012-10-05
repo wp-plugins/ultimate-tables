@@ -19,7 +19,6 @@ Ultimate tables lets you create, manage and professional designs to your tables.
 Its main features are:
 
 
-`
 <ul>
 <li> You can create different tables. Within a page or post can insert multiple tables at once.</li>
 
@@ -41,12 +40,13 @@ Its main features are:
 
 <li> Along with the plugin is installed 'Ultimate tables' widget. With this widget you can insert tables created.</li>
 </ul>
-`
-
-Once installed and activated the plugin within wordpress administration go to 'Settings-> Ultimate tables'. 
 
 
-Inside you will create, manage tables or copy the code to insert into your page or post.
+
+` Once installed and activated the plugin within wordpress administration go to 'Settings-> Ultimate tables'. 
+
+
+Inside you will create, manage tables or copy the code to insert into your page or post.`
 
 
 == Installation ==

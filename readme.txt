@@ -1,7 +1,7 @@
 === ULTIMATE TABLES ===
 Contributors: Extendyourweb.com/wordpress
 Donate link: http://www.extendyourweb.com/wordpress
-Tags: tables, pages, post, widget, row, column, order, filter, search, feed, feeds, page, pages, Post, posts, related, rss
+Tags: tables, table, excel, access, rows, columns, pages, post, widget, row, column, order, filter, search, feed, feeds, page, pages, Post, posts, related, rss
 Requires at least: 2.8.0
 Tested up to: 3.4.2
 Stable tag: 1.2.1

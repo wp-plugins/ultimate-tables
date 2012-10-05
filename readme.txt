@@ -6,12 +6,12 @@ Requires at least: 2.8.0
 Tested up to: 3.4.2
 Stable tag: 1.2.1
 
-Insert and manage tables in a very simple way.
+Create, manage and design tables without writing html code. Paging, sorting, filtering, searching and more options.
 
 == Description ==
 
+With this plugin you can create and manage very easily your tables from the wordpress administration. You can insert tables into your pages, articles, posts or in the 'ultimate tables' widget.
 
-Ultimate tables lets you create, manage and professional designs to your tables.
 
 
 <a href="http://www.extendyourweb.com/wordpress/ultimate-tables/">Demo and plugin page</a>

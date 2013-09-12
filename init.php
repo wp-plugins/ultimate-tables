@@ -1,13 +1,13 @@
 <?php
 /*
 Plugin Name: Ultimate Tables
-Plugin URI: http://www.extendyourweb.com/wordpress/ultimate-tables
+Plugin URI: http://www.extendyourweb.com/product/ultimate-tables/
 Description: Ultimate tables lets you create, manage and professional designs to your tables.
-Version: 1.1
-Author: extendyourweb.com/wordpress
-Author URI: http://www.extendyourweb.com/wordpress
+Version: 1.2
+Author: extendyourweb.com
+Author URI: http://www.extendyourweb.com/product/media-plugins-pack/
 
-Copyright 2012  Webpsilon S.C.P.
+Copyright 2013  Webpsilon S.C.P.
 
 This program is free software; you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -197,19 +197,35 @@ $output="";
 	
 	if($time!="manual") $tableclass=$time;					
 	  
+	  $heighttable="";
+	  
+	  if($theight!="" && $theight>0) $heighttable='
+	    "bScrollInfinite": true,
+        "bScrollCollapse": true,
+        "sScrollY": "'.((int)$theight).'px",
+		';
+		
+		$ispagination="true";
+		$typepagination="full_numbers";
+	  
+	  if($sizethumbnail=="false") $ispagination="false";
+	  if($sizethumbnail=="true" || $sizethumbnail=="") $typepagination="two_button";
 	  
 	  $output.= '
 	  
 	  <script type="text/javascript" charset="utf-8">
 			jQuery(document).ready(function() {
 				jQuery(\'#table_'.$id.$contador.'\').dataTable( {
-		"bPaginate": '.$sizethumbnail.',
+		"bPaginate": '.$ispagination.',
 		"bLengthChange": '.$op5.',
 		"bFilter": '.$op1.',
 		"bSort": '.$op2.',
 		"bInfo": '.$op3.',
-		"bAutoWidth": true ,
-		"sPaginationType": "full_numbers",
+		"bStateSave": true,
+		"bAutoWidth": '.$sizedescription.',
+		"sPaginationType": "'.$typepagination.'",
+		'.$heighttable.'
+		
 		'.$sizetitle.'
 		} 
 				);
@@ -697,6 +713,7 @@ $op5 = $myrows[$conta]->op5;
 	}
 include('template/footer.php');
 }
+
 
 
 

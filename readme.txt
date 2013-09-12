@@ -1,9 +1,9 @@
 === ULTIMATE TABLES ===
-Contributors: Extendyourweb.com/wordpress
-Donate link: http://www.extendyourweb.com/wordpress
+Contributors: Extendyourweb.com
+Donate link: http://www.extendyourweb.com/product/media-plugins-pack/
 Tags: tables, table, excel, access, rows, columns, pages, post, widget, row, column, order, filter, search, feed, feeds, page, pages, Post, posts, related, rss
 Requires at least: 2.8.0
-Tested up to: 3.4.2
+Tested up to: 3.6
 Stable tag: 1.2.1
 
 Create, manage and design tables without writing html code. Paging, sorting, filtering, searching and more options.
@@ -14,7 +14,7 @@ With this plugin you can create and manage very easily your tables from the word
 
 
 
-<a href="http://www.extendyourweb.com/wordpress/ultimate-tables/">Demo and plugin page</a>
+<a href="http://www.extendyourweb.com/product/ultimate-tables/">Demo and plugin page</a>
 
 Its main features are:
 
@@ -75,6 +75,9 @@ none
 
 
 == Changelog ==
+
+= 1.2 =
+* New feautures: Table height, a new navigation style, ... .
 
 = 1.1 =
 * first release

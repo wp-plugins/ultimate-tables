@@ -8,7 +8,6 @@
 		"bSort": object_name.op2,
 		"bInfo": object_name.op3,
 		"bJQueryUI": true,
-		"bAutoWidth": true ,
 		"sPaginationType": "full_numbers",
 		
 		"oLanguage": {

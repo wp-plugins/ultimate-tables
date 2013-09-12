@@ -228,7 +228,9 @@ tb_remove();
     </script>
 
 
-	  <legend><strong>Table <?php echo $id; ?>. To insert into a page or post type [ultimatetables <?php echo $id; ?> /], you can also use the ultimate tables widget to place the table in a widget. </strong><button class="editslider<?php echo $id; ?>">EDIT</button></legend> 
+	  <legend><strong>Table <?php echo $id; ?>.</strong> To insert into a page or post type:
+      
+      <input type="text"  value="[ultimatetables <?php echo $id; ?> /]" readonly />. You can also use the ultimate tables widget to place the table in a widget. <button class="editslider<?php echo $id; ?>">EDIT</button></legend> 
 
 
 
@@ -261,40 +263,53 @@ tb_remove();
 		          </select>
                    <label>Manual class: </label> <input type='text' id='op4<?php echo $id; ?>'  name='op4<?php echo $id; ?>'  value='<?php echo $op4; ?>' >        
               Type or select a predefined class of "ultimate-tables.css".<br/>
+              
+              
+              
+              <label >Max Height: </label><input id="theight<?php echo $id; ?>" name="theight<?php echo $id; ?>" type="text" value="<?php echo $theight; ?>" /> Blank value predetermined height || 
+              
+              <label>Auto width</label>
+                <select name="sizedescription<?php echo $id; ?>" id="sizedescription<?php echo $id; ?>">
+			        <option value="true" <?php if($sizedescription=="true" || $sizedescription=="") echo ' selected="selected"'; ?>>True</option>
+			        <option value="false" <?php if($sizedescription=="false") echo ' selected="selected"'; ?>>False</option>
+			      
+		          </select> 
+              <br/>
                
                
            
                    <label>Pagination</label>
 			      <select name="sizethumbnail<?php echo $id; ?>" id="sizethumbnail<?php echo $id; ?>">
-			        <option value="true" <?php if($sizethumbnail=="true" || $sizethumbnail=="") echo ' selected="selected"'; ?>>True</option>
+			        <option value="true" <?php if($sizethumbnail=="true" || $sizethumbnail=="") echo ' selected="selected"'; ?>>Two buttons</option>
+                     <option value="full_numbers" <?php if($sizethumbnail=="full_numbers") echo ' selected="selected"'; ?>>Full numbers</option>
 			        <option value="false" <?php if($sizethumbnail=="false") echo ' selected="selected"'; ?>>False</option>
 			      
 		          </select>  
                   
                                     <label>Pagination Length change</label>
 			      <select name="op5<?php echo $id; ?>" id="op5<?php echo $id; ?>">
-			        <option value="true" <?php if($op5=="true" || $sizethumbnail=="") echo ' selected="selected"'; ?>>True</option>
+			        <option value="true" <?php if($op5=="true" || $op5=="") echo ' selected="selected"'; ?>>True</option>
 			        <option value="false" <?php if($op5=="false") echo ' selected="selected"'; ?>>False</option>
 			      
 		          </select> 
                   
                   <label>Search</label>
 			      <select name="op1<?php echo $id; ?>" id="op1<?php echo $id; ?>">
-			        <option value="true" <?php if($op1=="true" || $sizethumbnail=="") echo ' selected="selected"'; ?>>True</option>
+			        <option value="true" <?php if($op1=="true" || $op1=="") echo ' selected="selected"'; ?>>True</option>
 			        <option value="false" <?php if($op1=="false") echo ' selected="selected"'; ?>>False</option>
 			      
 		          </select> 
                   
                                     <label>Sort</label>
 			      <select name="op2<?php echo $id; ?>" id="op2<?php echo $id; ?>">
-			        <option value="true" <?php if($op2=="true" || $sizethumbnail=="") echo ' selected="selected"'; ?>>True</option>
+			        <option value="true" <?php if($op2=="true" || $op2=="") echo ' selected="selected"'; ?>>True</option>
 			        <option value="false" <?php if($op2=="false") echo ' selected="selected"'; ?>>False</option>
 			      
 		          </select> 
                   
                                     <label>Info</label>
 			      <select name="op3<?php echo $id; ?>" id="op3<?php echo $id; ?>">
-			        <option value="true" <?php if($op3=="true" || $sizethumbnail=="") echo ' selected="selected"'; ?>>True</option>
+			        <option value="true" <?php if($op3=="true" || $op3=="") echo ' selected="selected"'; ?>>True</option>
 			        <option value="false" <?php if($op3=="false") echo ' selected="selected"'; ?>>False</option>
 			      
 		          </select>

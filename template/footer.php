@@ -23,17 +23,15 @@ $site_url = get_option( 'siteurl' );
 </style>
 <hr />  
 
+    <h2>USE</h2>
    
-   
-  
-<ul>
-<li><img src="<?php echo plugins_url('', __FILE__); ?>/icono3.png" width="50" height="50" /> <span class="style5"><strong><em>Use</em></strong>. </span><span class="style3">Create a table. Then edit the table values ​​and settings by pressing the button "edit". You can select columns and rows in the table, as well as its design, filter, search and more. </span></li>
-</ul>
+   <p> Click <span class="style5"><strong>edit</strong></span> to set the table.
+Add, edit, or delete the items you want to display in the table.</p>
+
 <hr />
-<p class="style6"><a href="http://www.extendyourweb.com/wordpress/ultimate-tables/">Ultimate tables manual and samples</a> ||
-<a href="http://www.extendyourweb.com/wordpress/">Visit our page and see more premium plugins!</a></p>
 
-<p>&nbsp;</p>
 
-<hr>
+<h2><a href="http://www.extendyourweb.com/product/media-plugins-pack/">Visit our page and download more plugins!</a></h2>
+
+
 </div>

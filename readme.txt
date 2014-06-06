@@ -1,9 +1,9 @@
 === ULTIMATE TABLES ===
 Contributors: Extendyourweb.com
-Donate link: http://www.extendyourweb.com/product/media-plugins-pack/
+Donate link: http://www.extendyourweb.com
 Tags: tables, table, excel, access, rows, columns, pages, post, widget, row, column, order, filter, search, feed, feeds, page, pages, Post, posts, related, rss
 Requires at least: 2.8.0
-Tested up to: 3.6
+Tested up to: 3.9
 Stable tag: 1.2.1
 
 Create, manage and design tables without writing html code. Paging, sorting, filtering, searching and more options.
@@ -14,7 +14,7 @@ With this plugin you can create and manage very easily your tables from the word
 
 
 
-<a href="http://www.extendyourweb.com/product/ultimate-tables/">Demo and plugin page</a>
+<a href="http://www.extendyourweb.com/ultimate-tables/">Demo and plugin page</a>
 
 Its main features are:
 

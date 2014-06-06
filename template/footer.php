@@ -30,7 +30,7 @@ Add, edit, or delete the items you want to display in the table.</p>
 
 <hr />
 
-<table style="text-align:center;"><tr><td><a href="http://www.extendyourweb.com/product/media-plugins-pack/" target="_blank"><img src="<?php echo plugins_url('', __FILE__); ?>/extendyourweb.jpg" /></a></td></tr><tr valign="top"><td><a href="http://www.extendyourweb.com/product/media-plugins-pack/" target="_blank">DOWNLOAD MORE PLUGINS</a><p>Now, you can download our 7 best plugins for video and image and enjoy all our creations in your sites.</p></td></tr></table>
+<table style="text-align:center;"><tr><td><a href="http://www.extendyourweb.com" target="_blank"><img src="<?php echo plugins_url('', __FILE__); ?>/extendyourweb.jpg" /></a></td></tr><tr valign="top"><td><a href="http://www.extendyourweb.com" target="_blank">DOWNLOAD MORE PLUGINS</a><p>Now, you can download our 7 best plugins for video and image and enjoy all our creations in your sites.</p></td></tr></table>
 
 
 </div>

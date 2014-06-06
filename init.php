@@ -1,13 +1,13 @@
 <?php
 /*
 Plugin Name: Ultimate Tables
-Plugin URI: http://www.extendyourweb.com/product/ultimate-tables/
+Plugin URI: http://www.extendyourweb.com/ultimate-tables/
 Description: Ultimate tables lets you create, manage and professional designs to your tables.
 Version: 1.2
 Author: extendyourweb.com
-Author URI: http://www.extendyourweb.com/product/media-plugins-pack/
+Author URI: http://www.extendyourweb.com
 
-Copyright 2013  Webpsilon S.C.P.
+Copyright 2014  Webpsilon S.C.P.
 
 This program is free software; you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -682,7 +682,7 @@ $number_thumbnails = $myrows[$conta]->number_thumbnails;
 
 
 
-$total = $myrows[$conta]->total;
+//$total = $myrows[$conta]->total;
 
 $border = $myrows[$conta]->border;
 $round = $myrows[$conta]->round;
@@ -721,7 +721,7 @@ include('template/footer.php');
 function ultimatetables_add_menu(){	
 	if (function_exists('add_options_page')) {
 		//add_menu_page
-		add_options_page('ultimatetables', 'Ultimate Tables', 8, 'ultimatetables', 'ultimatetables_panel');
+		add_options_page('ultimatetables', 'Ultimate Tables', 'manage_options', 'ultimatetables', 'ultimatetables_panel');
 	}
 }
 

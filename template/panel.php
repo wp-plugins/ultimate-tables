@@ -257,7 +257,9 @@ tb_remove();
                    
 			        <option value="bordered" <?php if($time=="bordered") echo ' selected="selected"'; ?>>bordered</option>
 			        <option value="zebra" <?php if($time=="zebra") echo ' selected="selected"'; ?>>zebra</option>
-                    <option value="manual" <?php if($time=="manual") echo ' selected="selected"'; ?>>manual ></option>
+                    <option value="manual" <?php if($time=="manual") echo ' selected="selected"'; ?>>manual</option>
+                    <option value="rwd-table" <?php if($time=="rwd-table") echo ' selected="selected"'; ?>>rwd-table</option>
+                     <option value="rwd-tablegreen" <?php if($time=="rwd-tablegreen") echo ' selected="selected"'; ?>>rwd-tablegreen</option>
                     <option value="" <?php if($time=="") echo ' selected="selected"'; ?>>none</option>
 			      
 		          </select>
@@ -327,7 +329,7 @@ tb_remove();
             <button id="deleteitem<?php echo $id; ?>" name="deleteitem<?php echo $id; ?>" class='button-secondary'>Delete selected</button>
             <div class="addwindow">
              <hr />
-           <input type="submit" name="" value="OK" /><button class="cancel">Cancel</button>
+           <input type="submit" name="deleteitems" id="deleteitems" value="OK" /><button class="cancel">Cancel</button>
              <hr />
             </div>
             
@@ -348,7 +350,7 @@ tb_remove();
     <thead>
         <tr>
 		<th style="display:none"></th>
-		<th width="80px"></th>
+		<th width="80px">Order</th>
 		';
 		
 		
@@ -387,7 +389,7 @@ tb_remove();
 			
 			echo '<tr>';
 			
-			echo '<td style="display:none">'.$cr.'</td><td><input name="dele'.$cr.'" type="checkbox" value="hide" />&nbsp;<input name="orderc'.$cr.'" type="text" value="'.$cr.'" size="4"/></td>';
+			echo '<td style="display:none">'.$cr.'</td><td><input name="dele'.$cr.'" type="checkbox" value="hide" />&nbsp;<input name="orderc'.$cr.'" type="text" value="'.$cr.'" size="3"/></td>';
 			
 			
 			$cc=0;

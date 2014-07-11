@@ -3,7 +3,7 @@
 Plugin Name: Ultimate Tables
 Plugin URI: http://www.extendyourweb.com/ultimate-tables/
 Description: Ultimate tables lets you create, manage and professional designs to your tables.
-Version: 1.2
+Version: 1.3
 Author: extendyourweb.com
 Author URI: http://www.extendyourweb.com
 
@@ -195,7 +195,8 @@ $output="";
 				
 	$tableclass="";
 	
-	if($time!="manual") $tableclass=$time;					
+	if($time!="manual") $tableclass=$time;	
+	else 	$tableclass=$op4;	
 	  
 	  $heighttable="";
 	  
@@ -211,30 +212,7 @@ $output="";
 	  if($sizethumbnail=="false") $ispagination="false";
 	  if($sizethumbnail=="true" || $sizethumbnail=="") $typepagination="two_button";
 	  
-	  $output.= '
-	  
-	  <script type="text/javascript" charset="utf-8">
-			jQuery(document).ready(function() {
-				jQuery(\'#table_'.$id.$contador.'\').dataTable( {
-		"bPaginate": '.$ispagination.',
-		"bLengthChange": '.$op5.',
-		"bFilter": '.$op1.',
-		"bSort": '.$op2.',
-		"bInfo": '.$op3.',
-		"bStateSave": true,
-		"bAutoWidth": '.$sizedescription.',
-		"sPaginationType": "'.$typepagination.'",
-		'.$heighttable.'
-		
-		'.$sizetitle.'
-		} 
-				);
-			} );
-		</script> 
-	    
-	  <table id="table_'.$id.$contador.'" width="100%" class="'.$tableclass.'">
-    <thead>
-        <tr>';
+	  $output.= '<script type="text/javascript" charset="utf-8">jQuery(document).ready(function() {jQuery(\'#table_'.$id.$contador.'\').dataTable( {"bPaginate": '.$ispagination.',"bLengthChange": '.$op5.',"bFilter": '.$op1.',"bSort": '.$op2.',"bInfo": '.$op3.',"bStateSave": true,"bAutoWidth": '.$sizedescription.',"sPaginationType": "'.$typepagination.'",'.$heighttable.''.$sizetitle.'} );});</script><table id="table_'.$id.$contador.'" width="100%" class="'.$tableclass.'"><thead><tr>';
 		
 		
 		$cc=0;
@@ -482,7 +460,7 @@ if(isset($_POST['borrar'])) {
 	if(isset($_POST['id'])){	
 	
 	function sortByOrder($a, $b) {
-    return intval(intval($a['order']) - intval($b['order']));
+    if(isset($a['order']) && isset($b['order'])) return intval(intval($a['order']) - intval($b['order']));
 }
 
 
@@ -504,7 +482,7 @@ while($cont<$total/$_POST["twidth".$_POST['id']]) {
 	
 	$conta=0;
 	$valaux=count($sorterr);
-	$sorterr[$valaux]['order']=$_POST['orderc'.$cont];
+	if(isset($_POST['orderc'.$cont])) $sorterr[$valaux]['order']=$_POST['orderc'.$cont];
 	$sorterr[$valaux]['cont']=$cont;
 	
 	
@@ -588,7 +566,7 @@ foreach ($sorterf as &$value) {
 		
 		while($cont<$total) {
 			
-			if((!$_POST['dele'.$conta] && !$_POST['del'.$cont2]) || $_POST['operation']!="2") {
+			if((!isset($_POST['dele'.$conta]) && !isset($_POST['del'.$cont2])) || !isset($_POST["deleteitems"])) {
 				
 				$valaux=count($sorter);
 				$aumenc=0;
@@ -646,9 +624,9 @@ usort($sorter, 'sortByOrder');
     
 	$cont = $value['cont'];
 
-			$values.=$_POST['title'.$cont]."t6r4nd".$_POST['description'.$cont]."t6r4nd".$_POST['image'.$cont]."t6r4nd".$_POST['link'.$cont]."t6r4nd".$_POST['video'.$cont]."t6r4nd".$_POST['timage'.$cont]."t6r4nd".$_POST['seo'.$cont]."t6r4nd".$_POST['seol'.$cont]."kh6gfd57hgg";
+			if(isset($_POST['description'.$cont])) $values.=$_POST['title'.$cont]."t6r4nd".$_POST['description'.$cont]."t6r4nd".$_POST['image'.$cont]."t6r4nd".$_POST['link'.$cont]."t6r4nd".$_POST['video'.$cont]."t6r4nd".$_POST['timage'.$cont]."t6r4nd".$_POST['seo'.$cont]."t6r4nd".$_POST['seol'.$cont]."kh6gfd57hgg";
 				
-		
+			else $values.=$_POST['title'.$cont]."t6r4nd".""."t6r4nd".""."t6r4nd".""."t6r4nd".""."t6r4nd".""."t6r4nd".""."t6r4nd".""."kh6gfd57hgg";
 			
 		}
 		
@@ -656,7 +634,7 @@ usort($sorter, 'sortByOrder');
 		
 
 
-$sql= "UPDATE $table_name SET `ivalues` = '".$values."', `title` = '".$_POST["stitle".$_POST['id']]."', `width` = '".$_POST["width".$_POST['id']]."', `height` = '".$_POST["height".$_POST['id']]."', `round` = '".$_POST["round".$_POST['id']]."', `width_thumbnail` = '".$_POST["twidth".$_POST['id']]."', `height_thumbnail` = '".$_POST["theight".$_POST['id']]."', `thumbnail_border` = '".$_POST["tborder".$_POST['id']]."', `thumbnail_round` = '".$_POST["thumbnail_round".$_POST['id']]."', `number_thumbnails` = '".$_POST["number_thumbnails".$_POST['id']]."', `sizetitle` = '".$_POST["sizetitle".$_POST['id']]."', `sizedescription` = '".$_POST["sizedescription".$_POST['id']]."', `sizethumbnail` = '".$_POST["sizethumbnail".$_POST['id']]."', `font` = '".$_POST["font".$_POST['id']]."', `color1` = '".$_POST["color1".$_POST['id']]."', `color2` = '".$_POST["color2".$_POST['id']]."', `color3` = '".$_POST["color3".$_POST['id']]."', `time` = '".$_POST["time".$_POST['id']]."', `border` = '".$_POST["border".$_POST['id']]."', `animation` = '".$_POST["animation".$_POST['id']]."', `mode` = '".$_POST["mode".$_POST['id']]."', `op1` = '".$_POST["op1".$_POST['id']]."', `op2` = '".$_POST["op2".$_POST['id']]."', `op3` = '".$_POST["op3".$_POST['id']]."', `op4` = '".$_POST["op4".$_POST['id']]."', `op5` = '".$_POST["op5".$_POST['id']]."' WHERE `id` =  ".$_POST["id"]." LIMIT 1";
+$sql= "UPDATE $table_name SET `ivalues` = '".$values."', `title` = '".$_POST["stitle".$_POST['id']]."', `width` = '".$_POST["width".$_POST['id']]."', `height` = '".$_POST["height".$_POST['id']]."', `round` = '".""."', `width_thumbnail` = '".$_POST["twidth".$_POST['id']]."', `height_thumbnail` = '".$_POST["theight".$_POST['id']]."', `thumbnail_border` = '".""."', `thumbnail_round` = '".""."', `number_thumbnails` = '".""."', `sizetitle` = '".$_POST["sizetitle".$_POST['id']]."', `sizedescription` = '".$_POST["sizedescription".$_POST['id']]."', `sizethumbnail` = '".$_POST["sizethumbnail".$_POST['id']]."', `font` = '".""."', `color1` = '".""."', `color2` = '".""."', `color3` = '".""."', `time` = '".$_POST["time".$_POST['id']]."', `border` = '".""."', `animation` = '".""."', `mode` = '".""."', `op1` = '".$_POST["op1".$_POST['id']]."', `op2` = '".$_POST["op2".$_POST['id']]."', `op3` = '".$_POST["op3".$_POST['id']]."', `op4` = '".$_POST["op4".$_POST['id']]."', `op5` = '".$_POST["op5".$_POST['id']]."' WHERE `id` =  ".$_POST["id"]." LIMIT 1";
 		
 			
 			

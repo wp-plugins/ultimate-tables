@@ -4,7 +4,7 @@ Donate link: http://www.extendyourweb.com
 Tags: tables, table, excel, access, rows, columns, pages, post, widget, row, column, order, filter, search, feed, feeds, page, pages, Post, posts, related, rss
 Requires at least: 2.8.0
 Tested up to: 3.9
-Stable tag: 1.2.1
+Stable tag: 1.3
 
 Create, manage and design tables without writing html code. Paging, sorting, filtering, searching and more options.
 
@@ -75,6 +75,10 @@ none
 
 
 == Changelog ==
+
+= 1.3 =
+* 2 new Design tables.
+* Fixed bugs in the admin.
 
 = 1.2 =
 * New feautures: Table height, a new navigation style, ... .

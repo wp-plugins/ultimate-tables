@@ -720,3 +720,41 @@ div.box {
     -webkit-border-radius: 0 0 6px 6px
     border-radius: 0 0 6px 6px
 }
+
+.rwd-table {
+  background: #34495E;
+  color: #fff;
+  border-radius: .4em;
+  overflow: hidden;
+
+}
+
+.rwd-table th, .rwd-table td {
+   color: #34495E !important;
+margin: .5em 1em;
+	@media (min-width: $breakpoint-alpha) { 
+	  padding: 1em !important; 
+	}
+}
+.rwd-table th, .rwd-table td:before {
+color: #dd5 !important;
+}
+
+.rwd-tablegreen {
+  background: #2ecc71;
+  color: #fff;
+  border-radius: .4em;
+  overflow: hidden;
+
+}
+
+.rwd-tablegreen th, .rwd-tablegreen td {
+   color: #2ecc71 !important;
+margin: .5em 1em;
+	@media (min-width: $breakpoint-alpha) { 
+	  padding: 1em !important; 
+	}
+}
+.rwd-tablegreen th, .rwd-tablegreen td:before {
+color: #e67e22 !important;
+}

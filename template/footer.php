@@ -20,6 +20,11 @@ $site_url = get_option( 'siteurl' );
 	font-style: italic;
 }
 -->
+#extendyourweb img {
+	
+	border: 5px solid #fff;
+	
+}
 </style>
 <hr />  
 
@@ -28,9 +33,13 @@ $site_url = get_option( 'siteurl' );
    <p> Click <span class="style5"><strong>edit</strong></span> to set the table.
 Add, edit, or delete the items you want to display in the table.</p>
 
+<h2><a href="http://www.extendyourweb.com/ultimate-tables/" target="_blank">Ultimate tables demo&manual page.</a></h2>
 <hr />
+<H2>Visit extendyourweb.com and discover the best wordpress themes and plugins:</H2>
 
-<table style="text-align:center;"><tr><td><a href="http://www.extendyourweb.com" target="_blank"><img src="<?php echo plugins_url('', __FILE__); ?>/extendyourweb.jpg" /></a></td></tr><tr valign="top"><td><a href="http://www.extendyourweb.com" target="_blank">DOWNLOAD MORE PLUGINS</a><p>Now, you can download our 7 best plugins for video and image and enjoy all our creations in your sites.</p></td></tr></table>
+
+
+<table id="extendyourweb" style="text-align:center;"><tr><td><a href="http://www.extendyourweb.com/wordpress-themes/" target="_blank"><img src="<?php echo plugins_url('', __FILE__); ?>/themes.jpg" /></a><br/><h2><a href="http://www.extendyourweb.com/wordpress-themes/" target="_blank">DOWNLOAD WORDPRESS FREE THEMES</a></h2></td><td><a href="http://www.extendyourweb.com/wordpress-plugins/" target="_blank"><img src="<?php echo plugins_url('', __FILE__); ?>/plugins.png" /></a><br/><h2><a href="http://www.extendyourweb.com/wordpress-plugins/" target="_blank">DOWNLOAD WORDPRESS PLUGINS</a></h2></td></tr></table>
 
 
 </div>

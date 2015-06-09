@@ -256,6 +256,15 @@ tb_remove();
                    <option value="display" <?php if($time=="display") echo ' selected="selected"'; ?>>display</option>
                    
 			        <option value="bordered" <?php if($time=="bordered") echo ' selected="selected"'; ?>>bordered</option>
+					<option value="compact" <?php if($time=="compact") echo ' selected="selected"'; ?>>compact</option>
+					
+					<option value="hover" <?php if($time=="hover") echo ' selected="selected"'; ?>>hover</option>
+					<option value="order-column" <?php if($time=="order-column") echo ' selected="selected"'; ?>>order-column</option>
+					<option value="row-border" <?php if($time=="row-border") echo ' selected="selected"'; ?>>row-border</option>
+					<option value="stripe" <?php if($time=="stripe") echo ' selected="selected"'; ?>>stripe</option>
+					
+					
+					
 			        <option value="zebra" <?php if($time=="zebra") echo ' selected="selected"'; ?>>zebra</option>
                     <option value="manual" <?php if($time=="manual") echo ' selected="selected"'; ?>>manual</option>
                     <option value="rwd-table" <?php if($time=="rwd-table") echo ' selected="selected"'; ?>>rwd-table</option>

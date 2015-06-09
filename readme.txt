@@ -1,10 +1,10 @@
 === ULTIMATE TABLES ===
 Contributors: Extendyourweb.com
 Donate link: http://www.extendyourweb.com
-Tags: tables, table, excel, access, rows, columns, pages, post, widget, row, column, order, filter, search, feed, feeds, page, pages, Post, posts, related, rss
+Tags: tables, table, responsive, excel, access, rows, columns, pages, post, widget, row, column, order, filter, search, feed, feeds, page, pages, Post, posts, related, rss
 Requires at least: 2.8.0
-Tested up to: 3.9
-Stable tag: 1.3
+Tested up to: 4.2.2
+Stable tag: 1.4
 
 Create, manage and design tables without writing html code. Paging, sorting, filtering, searching and more options.
 
@@ -75,6 +75,10 @@ none
 
 
 == Changelog ==
+
+= 1.4 =
+* 4 new Design tables.
+* Responsives tables.
 
 = 1.3 =
 * 2 new Design tables.

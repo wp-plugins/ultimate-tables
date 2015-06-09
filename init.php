@@ -3,11 +3,11 @@
 Plugin Name: Ultimate Tables
 Plugin URI: http://www.extendyourweb.com/ultimate-tables/
 Description: Ultimate tables lets you create, manage and professional designs to your tables.
-Version: 1.3
+Version: 1.4
 Author: extendyourweb.com
 Author URI: http://www.extendyourweb.com
 
-Copyright 2014  Webpsilon S.C.P.
+Copyright 2015  Webpsilon S.C.P.
 
 This program is free software; you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -197,6 +197,8 @@ $output="";
 	
 	if($time!="manual") $tableclass=$time;	
 	else 	$tableclass=$op4;	
+	
+	if($time=="compact") $tableclass="display ".$time;
 	  
 	  $heighttable="";
 	  
@@ -212,7 +214,7 @@ $output="";
 	  if($sizethumbnail=="false") $ispagination="false";
 	  if($sizethumbnail=="true" || $sizethumbnail=="") $typepagination="two_button";
 	  
-	  $output.= '<script type="text/javascript" charset="utf-8">jQuery(document).ready(function() {jQuery(\'#table_'.$id.$contador.'\').dataTable( {"bPaginate": '.$ispagination.',"bLengthChange": '.$op5.',"bFilter": '.$op1.',"bSort": '.$op2.',"bInfo": '.$op3.',"bStateSave": true,"bAutoWidth": '.$sizedescription.',"sPaginationType": "'.$typepagination.'",'.$heighttable.''.$sizetitle.'} );});</script><table id="table_'.$id.$contador.'" width="100%" class="'.$tableclass.'"><thead><tr>';
+	  $output.= '<script type="text/javascript" charset="utf-8">jQuery(document).ready(function() { jQuery(\'#table_'.$id.$contador.'\').DataTable( {"bPaginate": '.$ispagination.',"bLengthChange": '.$op5.',"bFilter": '.$op1.',"bSort": '.$op2.',"bInfo": '.$op3.',"bStateSave": true,"bAutoWidth": '.$sizedescription.',"sPaginationType": "'.$typepagination.'",'.$heighttable.''.$sizetitle.'} );});</script><table id="table_'.$id.$contador.'" width="100%" class="'.$tableclass.'"><thead><tr>';
 		
 		
 		$cc=0;
@@ -272,10 +274,13 @@ function add_header_ultimatetables() {
 
 	 
  wp_register_style( 'ultimate-tables-style', plugins_url('', __FILE__).'/css/ultimate-tables.css' );
- wp_enqueue_style( 'ultimate-tables-style' );	
+ wp_enqueue_style( 'ultimate-tables-style' );
+ wp_register_style( 'ultimate-datatables-style', plugins_url('', __FILE__).'/css/jquery.dataTables.css' );
+ wp_enqueue_style( 'ultimate-datatables-style' );	
+ 
  wp_enqueue_script('jquery');
 	
-	wp_enqueue_script('ultimatetables', plugins_url('', __FILE__).'/js/jquery.dataTables.js', array('jquery'), '1.0', true);
+	wp_enqueue_script('ultimatetables', plugins_url('', __FILE__).'/js/jquery.dataTables.min.js', array('jquery'), '1.0', true);
 	//wp_enqueue_script('ultimatetablesscript', plugins_url('', __FILE__).'/js/ultimate-tables.js', array('jquery'), '1.0', true);
 	 
 	

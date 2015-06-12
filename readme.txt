@@ -42,7 +42,7 @@ Its main features are:
 </ul>
 
 Video manual:
-[youtube] https://www.youtube.com/watch?v=yy42D9wsDXU
+https://www.youtube.com/watch?v=yy42D9wsDXU>
 
 Once installed and activated the plugin within wordpress administration go to 'Settings-> Ultimate tables'. 
 

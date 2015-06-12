@@ -39,7 +39,7 @@ Add, edit, or delete the items you want to display in the table.</p>
 
 
 
-<table id="extendyourweb" style="text-align:center;"><tr><td><a href="http://www.extendyourweb.com/wordpress-themes/" target="_blank"><img src="<?php echo plugins_url('', __FILE__); ?>/themes.jpg" /></a><br/><h2><a href="http://www.extendyourweb.com/wordpress-themes/" target="_blank">DOWNLOAD WORDPRESS FREE THEMES</a></h2></td><td><a href="http://www.extendyourweb.com/wordpress-plugins/" target="_blank"><img src="<?php echo plugins_url('', __FILE__); ?>/plugins.png" /></a><br/><h2><a href="http://www.extendyourweb.com/wordpress-plugins/" target="_blank">DOWNLOAD WORDPRESS PLUGINS</a></h2></td></tr></table>
+<table id="extendyourweb" style="text-align:center;"><tr><td><a href="http://www.extendyourweb.com/wordpress-theme/" target="_blank"><img src="<?php echo plugins_url('', __FILE__); ?>/themes.jpg" /></a><br/><h2><a href="http://www.extendyourweb.com/wordpress-theme/" target="_blank">DOWNLOAD EXTENDPRO THEME (Bootstrap, font awesome, animations, ...)</a></h2></td><td><a href="http://www.extendyourweb.com/wordpress-plugins/" target="_blank"><img src="<?php echo plugins_url('', __FILE__); ?>/plugins.png" /></a><br/><h2><a href="http://www.extendyourweb.com/wordpress-plugins/" target="_blank">DOWNLOAD WORDPRESS PLUGINS</a></h2></td></tr></table>
 
 
 </div>

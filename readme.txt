@@ -1,10 +1,10 @@
 === ULTIMATE TABLES ===
 Contributors: Extendyourweb.com
-Donate link: http://www.extendyourweb.com
+Donate link: http://www.extendyourweb.com/wordpress-plugins/
 Tags: tables, table, responsive, excel, access, rows, columns, pages, post, widget, row, column, order, filter, search, feed, feeds, page, pages, Post, posts, related, rss
 Requires at least: 2.8.0
 Tested up to: 4.2.2
-Stable tag: 1.4
+Stable tag: 1.5
 
 Create, manage and design tables without writing html code. Paging, sorting, filtering, searching and more options.
 
@@ -41,6 +41,8 @@ Its main features are:
 <li> Along with the plugin is installed 'Ultimate tables' widget. With this widget you can insert tables created.</li>
 </ul>
 
+Video manual:
+[youtube] https://www.youtube.com/watch?v=yy42D9wsDXU
 
 Once installed and activated the plugin within wordpress administration go to 'Settings-> Ultimate tables'. 
 
@@ -75,6 +77,9 @@ none
 
 
 == Changelog ==
+
+= 1.5 =
+* New table option: Resolves conflicts with other jquery functions. Desactive two buttons pagination because produced one error.
 
 = 1.4 =
 * 4 new Design tables.

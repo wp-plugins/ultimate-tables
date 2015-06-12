@@ -291,8 +291,8 @@ tb_remove();
            
                    <label>Pagination</label>
 			      <select name="sizethumbnail<?php echo $id; ?>" id="sizethumbnail<?php echo $id; ?>">
-			        <option value="true" <?php if($sizethumbnail=="true" || $sizethumbnail=="") echo ' selected="selected"'; ?>>Two buttons</option>
-                     <option value="full_numbers" <?php if($sizethumbnail=="full_numbers") echo ' selected="selected"'; ?>>Full numbers</option>
+			        <option value="true" <?php if($sizethumbnail=="true") echo ' selected="selected"'; ?>>Two buttons</option>
+                     <option value="full_numbers" <?php if($sizethumbnail=="full_numbers" || $sizethumbnail=="") echo ' selected="selected"'; ?>>Full numbers</option>
 			        <option value="false" <?php if($sizethumbnail=="false") echo ' selected="selected"'; ?>>False</option>
 			      
 		          </select>  
@@ -324,6 +324,14 @@ tb_remove();
 			        <option value="false" <?php if($op3=="false") echo ' selected="selected"'; ?>>False</option>
 			      
 		          </select>
+				  
+				                <label>Conflicts with other jquery functions?</label>
+                <select name="color1<?php echo $id; ?>" id="color1<?php echo $id; ?>">
+			        <option value="false" <?php if($color1=="false" || $color1=="") echo ' selected="selected"'; ?>>False</option>
+			        <option value="true" <?php if($color1=="true") echo ' selected="selected"'; ?>>True</option>
+			      
+		          </select> 
+              <br/>
                   
             <input type='submit' name='' class='button-primary' value='SAVE TABLE' /> <hr /> 
       

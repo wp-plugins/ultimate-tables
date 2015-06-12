@@ -3,7 +3,7 @@
 Plugin Name: Ultimate Tables
 Plugin URI: http://www.extendyourweb.com/ultimate-tables/
 Description: Ultimate tables lets you create, manage and professional designs to your tables.
-Version: 1.4
+Version: 1.5
 Author: extendyourweb.com
 Author URI: http://www.extendyourweb.com
 
@@ -212,11 +212,11 @@ $output="";
 		$typepagination="full_numbers";
 	  
 	  if($sizethumbnail=="false") $ispagination="false";
-	  if($sizethumbnail=="true" || $sizethumbnail=="") $typepagination="two_button";
+	  //if($sizethumbnail=="true" || $sizethumbnail=="") $typepagination="two_button";
 	  
-	  $output.= '<script type="text/javascript" charset="utf-8">jQuery(document).ready(function() { jQuery(\'#table_'.$id.$contador.'\').DataTable( {"bPaginate": '.$ispagination.',"bLengthChange": '.$op5.',"bFilter": '.$op1.',"bSort": '.$op2.',"bInfo": '.$op3.',"bStateSave": true,"bAutoWidth": '.$sizedescription.',"sPaginationType": "'.$typepagination.'",'.$heighttable.''.$sizetitle.'} );});</script><table id="table_'.$id.$contador.'" width="100%" class="'.$tableclass.'"><thead><tr>';
-		
-		
+
+
+		  $output.= '<table id="table_'.$id.$contador.'" width="100%" class="'.$tableclass.'"><thead><tr>';
 		$cc=0;
 		$cont=0;
 		while($cc<$width) {
@@ -234,7 +234,14 @@ $output="";
     </thead>
     <tbody>
 	';
-	
+		if($color1=="true") $output.='<script language="JavaScript" src="https://code.jquery.com/jquery-1.11.2.js" type="text/javascript"></script>';
+		
+	$output.= '
+	<script type="text/javascript" charset="utf-8">
+ jQuery(document).ready(function() {
+    jQuery(\'#table_'.$id.$contador.'\').DataTable( {"bPaginate": '.$ispagination.',"bLengthChange": '.$op5.',"bFilter": '.$op1.',"bSort": '.$op2.',"bInfo": '.$op3.',"bStateSave": true,"bAutoWidth": '.$sizedescription.',"sPaginationType": "'.$typepagination.'",'.$heighttable.''.$sizetitle.'} );
+});
+ </script>';
 	
 		$cr=0;
 		while($cr<$height) {
@@ -639,7 +646,7 @@ usort($sorter, 'sortByOrder');
 		
 
 
-$sql= "UPDATE $table_name SET `ivalues` = '".$values."', `title` = '".$_POST["stitle".$_POST['id']]."', `width` = '".$_POST["width".$_POST['id']]."', `height` = '".$_POST["height".$_POST['id']]."', `round` = '".""."', `width_thumbnail` = '".$_POST["twidth".$_POST['id']]."', `height_thumbnail` = '".$_POST["theight".$_POST['id']]."', `thumbnail_border` = '".""."', `thumbnail_round` = '".""."', `number_thumbnails` = '".""."', `sizetitle` = '".$_POST["sizetitle".$_POST['id']]."', `sizedescription` = '".$_POST["sizedescription".$_POST['id']]."', `sizethumbnail` = '".$_POST["sizethumbnail".$_POST['id']]."', `font` = '".""."', `color1` = '".""."', `color2` = '".""."', `color3` = '".""."', `time` = '".$_POST["time".$_POST['id']]."', `border` = '".""."', `animation` = '".""."', `mode` = '".""."', `op1` = '".$_POST["op1".$_POST['id']]."', `op2` = '".$_POST["op2".$_POST['id']]."', `op3` = '".$_POST["op3".$_POST['id']]."', `op4` = '".$_POST["op4".$_POST['id']]."', `op5` = '".$_POST["op5".$_POST['id']]."' WHERE `id` =  ".$_POST["id"]." LIMIT 1";
+$sql= "UPDATE $table_name SET `ivalues` = '".$values."', `title` = '".$_POST["stitle".$_POST['id']]."', `width` = '".$_POST["width".$_POST['id']]."', `height` = '".$_POST["height".$_POST['id']]."', `round` = '".""."', `width_thumbnail` = '".$_POST["twidth".$_POST['id']]."', `height_thumbnail` = '".$_POST["theight".$_POST['id']]."', `thumbnail_border` = '".""."', `thumbnail_round` = '".""."', `number_thumbnails` = '".""."', `sizetitle` = '".$_POST["sizetitle".$_POST['id']]."', `sizedescription` = '".$_POST["sizedescription".$_POST['id']]."', `sizethumbnail` = '".$_POST["sizethumbnail".$_POST['id']]."', `font` = '".""."', `color1` = '".$_POST["color1".$_POST['id']]."', `color2` = '".""."', `color3` = '".""."', `time` = '".$_POST["time".$_POST['id']]."', `border` = '".""."', `animation` = '".""."', `mode` = '".""."', `op1` = '".$_POST["op1".$_POST['id']]."', `op2` = '".$_POST["op2".$_POST['id']]."', `op3` = '".$_POST["op3".$_POST['id']]."', `op4` = '".$_POST["op4".$_POST['id']]."', `op5` = '".$_POST["op5".$_POST['id']]."' WHERE `id` =  ".$_POST["id"]." LIMIT 1";
 		
 			
 			
